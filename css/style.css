@@ -1,0 +1,313 @@
+/*============================== Main css start ==================*/
+*{margin: 0;padding: 0;outline: 0;}
+ul,li{list-style: none;}
+a,a:hover,a.active{text-decoration: none;}
+img{max-width: 100%;}
+body{overflow-x: hidden;}
+h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
+/*============================== Main css End ====================*/
+
+/*============================== Section_titel Start ========================*/
+.section_titel{margin-bottom: 50px;}
+.section_titel h2{font-family: "Raleway", sans-serif;
+font-weight: 700;
+font-size: 30px;
+color: #173b6c;
+font-style: italic;
+position: relative;
+margin-bottom: 20px;
+padding-bottom: 20px;}
+.section_titel h2:after{content: '';
+position: absolute;
+display: block;
+width: 50px;
+height: 3px;
+background: #149ddd;
+bottom: 0;
+left: 0;}
+.section_titel p{}
+/*============================== Section_titel End ==========================*/
+
+/*-------------------------------- Header ---------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #040b14;
+  overflow-y: auto;}
+#header .profile img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  border: 8px solid #2c2f3f;}
+#header .profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Poppins", sans-serif;}
+#header .profile h1 a, #header .profile h1 a:hover {color: #fff;text-decoration: none;}
+#header .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;}
+#header .profile .social-links a:hover {background: #149ddd;color: #fff;text-decoration: none;}
+#main {margin-left: 300px;}
+@media (max-width: 1199px) {
+  #header {left: -300px;}
+  #main {margin-left: 0;}
+}
+
+/*------------------------------- Navigation Men ----------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu {padding-top: 30px;}
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;}
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;}
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;}
+.nav-menu a i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #6f7180;}
+.nav-menu:hover a {
+  text-decoration: none;
+  color: #fff;}
+.nav-menu li:hover a i {color: #149ddd;}
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;}
+.mobile-nav-toggle i {color: #149ddd;}
+.mobile-nav-active {overflow: hidden;}
+.mobile-nav-active #header { left: 0;}
+.mobile-nav-active .mobile-nav-toggle i {color: #fff;}
+
+/*==================================== Head part Edn ============================*/
+
+/*========================== Name_section Start =========================*/
+#Name_section{width: 100%;
+    height: 100vh;
+    background: url("../img/hogwarts_legacy.jpg") top center;
+    background-size: cover;}
+#Name_section::before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;}
+.Name_text{position: relative;
+	z-index: 2;
+	min-width: 300px;}
+.Name_text h1{font-family: "Raleway", sans-serif;
+	margin: 0 0 10px 0;
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 56px;
+	color: #fff;}
+.Name_text p{color: #fff;
+	margin-bottom: 50px;
+	font-size: 26px;
+	font-family: "Poppins", sans-serif;}
+.Name_text p span{color: #fff;
+	padding-bottom: 4px;
+	letter-spacing: 5px;
+	border-bottom: 3px solid #149ddd;}
+/*========================== Name_section End ===========================*/
+
+
+/*========================== Main_part Start ===========================*/
+#Main_part{margin-left: 300px;}
+/*========================== Main_part End =============================*/
+
+
+/*========================== About_part Start ===========================*/
+#About_part{padding: 60px 0;}
+#About_part .about_text h2{font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;}
+#About_part ul li{padding-bottom: 10px;}
+#About_part ul li i{font-size: 20px;
+    padding-right: 10px;
+    color: #149ddd;}
+#About_part .text{font-family: "Open Sans", sans-serif;
+    color: #272829;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+width: 665px;}
+/*========================== About_part End =============================*/
+
+
+/*========================== Name_section Start ===========================*/
+#Project_part{padding: 60px 0;}
+#Project_part .count_box{padding: 30px;width: 100%;}
+#Project_part .count_box i{display: block;
+    float: left;
+    font-size: 45px;
+    color: #149ddd;}
+#Project_part .count_box span{font-size: 48px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: #050d18;
+    margin-left: 60px;}
+#Project_part .count_box p{font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    color: #122f57;
+    padding: 15px 0 0 0;
+    margin-left: 60px;}
+/*========================== Name_section End =============================*/
+
+
+/*========================== Skill_Ppart Start ===========================*/
+
+#Skill_Ppart{padding: 100px 0;background: #f5f8fd;margin-bottom: 50px;}
+#Skill_Ppart .progress{height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;}
+#Skill_Ppart .skill{padding: 0;
+    margin: 10px 0 10px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;}
+#Skill_Ppart .skill .val{float: right;font-style: normal;}
+#Skill_Ppart .progress-bar-wrap{background: #dce8f8;height: 10px;}
+#Skill_Ppart .progress-bar-wrap .progress-bar{height: 10px;
+    transition: .9s;
+    background-color: #149ddd;}
+/*========================== Skill_Ppart End =============================*/
+
+/*========================== Resume_part Start ===========================*/
+#Resume_part{padding: 100px 0px;}
+#Resume_part .resume_text{margin-bottom: 10px;}
+#Resume_part .resume_text h2{font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+    font-family: "Raleway", sans-serif;}
+#Resume_part .resume_text .resume{padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;}
+#Resume_part .resume_text .resume:before{content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;}
+#Resume_part .resume_text .resume h4{line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;}
+#Resume_part .resume_text .resume h5{font-size: 16px;font-weight: 600}
+#Resume_part .resume_text .resume p{font-size: 16px;font-weight: 600}
+#Resume_part .text_2{margin-top: 80px;}
+/*========================== Resume_part End =============================*/
+
+/*========================== Contact_part Start ===========================*/
+#Contact_part{margin-top: 80px;}
+#Contact_part .info{padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);}
+#Contact_part .info .common{}
+#Contact_part .info .common i{font-size: 20px;
+    color: #149ddd;
+    width: 45px;
+    height: 45px;
+    float: left;
+    background: #dff3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .5s;}
+#Contact_part .info .common h4{font-family: "Raleway", sans-serif;
+font-size: 24px;
+font-weight: 600;
+color: #050d18;
+margin-bottom: 5px;
+padding-left: 60px;}
+#Contact_part .info .common p{padding: 0 0 10px 60px;
+margin-bottom: 20px;
+font-size: 14px;
+color: #173b6c;}
+#Contact_part .info .common:hover i{background: #149ddd;color: #fff;}
+
+#Contact_part .right_contact{padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);}
+
+.right_contact .message_part{margin-top: 20px;}
+.right_contact  .btn_area{margin-top: 20px;}
+/*========================== Contact_part End =============================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-family: "Raleway", sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Markazi Text', serif;

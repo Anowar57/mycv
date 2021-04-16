@@ -1,0 +1,32 @@
+/*================================== Extra Small Device Start ================================*/
+@media (min-width: 320px) and (max-width: 575.99px){
+
+	#Main_part{margin-left: 0px;}
+	#About_part .about_text{margin-top: 30px;}
+	.font-italic {margin-bottom: 20px;}
+	#About_part .text{padding: 10px;}
+	#Facts_part{padding-top: 0;}
+	#Facts_part .count_box{padding: 0 55px;margin-bottom: 20px;}
+	#Facts_part .count_box i{font-size: 30px;}
+	#Facts_part .count_box span{font-size: 25px;line-height: 25px;}
+	#Facts_part .count_box p{padding: 0;}
+	#Contact_part .right_contact{margin-top: 25px;}
+}
+/*================================== Extra Small Device End ==================================*/
+
+/*=================================== small Device Start =============================*/
+@media (min-width: 576px) and (max-width: 767.99px){
+	#Main_part{margin: 0;}
+	#About_part .about_text{margin-top: 30px;margin-left: 50px;}
+	#Contact_part .right_contact{margin-top: 25px;}
+
+}
+/*=================================== small Device End ===============================*/
+
+/*===================================== Mediam Device Start =============================*/
+@media (min-width: 768px) and (max-width: 991.99px){
+	#Main_part{margin: 0;}
+	#Contact_part{margin-bottom: 20px;}
+	#Contact_part .info{padding: 65px 30px;}
+}
+/*===================================== Mediam Device End ===============================*/
